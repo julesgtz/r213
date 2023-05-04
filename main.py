@@ -15,7 +15,7 @@ print("Tableau d'amortissement : ")
 print("Mois - Mensualité - Intérêts - Capital rembousé - Capital restant du - Intérêts remboursés")
 capitalrest = 20000
 interetsremb=0
-for i in range(1,25):
+for i in range(1,annee*12+1):
     interets=capitalrest*tauxmens
     capitalrembourse=mens-interets
     capitalrest=capitalrest-capitalrembourse
