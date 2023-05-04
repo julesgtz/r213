@@ -5,9 +5,6 @@ annee=int(input("entrez le nombre d'années : "))
 tauxmens=(taux/100)/12
 mens=(mont*tauxmens*((1+tauxmens)**(12*annee)))/(((1+tauxmens)**(12*annee))-1)
 montint=(mens*annee*12)-20000
-mens=round(mens,2)
-montint=round(montint,2)
-
 print("La mensulaité avec intérêts est de :", mens)
 print("Le montant des intérêts remboursés sont de :",montint)
 print("Le taux mensuel est de ",tauxmens)
